@@ -1,0 +1,63 @@
+.heading-1,
+.heading-2,
+.heading-3,
+.heading-4 {
+  line-height: 1.5;
+  text-transform: capitalize;
+}
+
+.heading-1 {
+  font-size: 5.2rem;
+}
+
+.heading-2 {
+  font-size: 4.4rem;
+}
+
+.heading-3 {
+  font-size: 3.6rem;
+}
+
+.heading-4 {
+  font-size: 2.8rem;
+}
+
+.subtitle-1 {
+  font-size: 2.6rem;
+}
+
+.subtitle-2 {
+  font-size: 2.2rem;
+}
+
+.subtitle-3 {
+  font-size: 2rem;
+}
+
+.subtitle-4 {
+  font-family: JosefinSansSemibold;
+  font-size: 1.6rem;
+}
+
+.body-text-lg,
+.body-text-md,
+.body-text-sm {
+  font-family: LatoRegular;
+}
+
+.body-text-lg {
+  font-size: 1.8rem;
+}
+
+.body-text-md,
+.body-text-md-bold {
+  font-size: 1.6rem;
+}
+
+.body-text-md-bold {
+  font-family: LatoBold;
+}
+
+.body-text-sm {
+  font-size: 1.4rem;
+}
