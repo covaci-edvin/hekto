@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "JosefinSansBold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./josefin-sans-bold.woff2") format("woff2");
+  font-display: block;
+}
+
+@font-face {
+  font-family: "JosefinSansSemibold";
+  font-style: normal;
+  font-weight: 600;
+  src: url("./josefin-sans-semibold.woff2") format("woff2");
+  font-display: block;
+}
+
+@font-face {
+  font-family: "LatoBold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./lato-bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "LatoRegular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./lato-regular.woff2") format("woff2");
+}
