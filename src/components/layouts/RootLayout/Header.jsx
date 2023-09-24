@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import Icon from "../../ui/Icon";
-import hektoLogo from "../../../assets/svgs/hekto-logo.svg";
 import classes from "./Header.module.scss";
 import HeaderSelectInput from "../../form/HeaderSelectInput";
 import { Link, NavLink } from "react-router-dom";
 import SearchInput from "../../form/SearchInput";
+import HektoLogo from "../../ui/HektoLogo";
 
 function Header() {
   const [searchParam, setSearchParam] = useState("");
@@ -62,7 +62,9 @@ function Header() {
       <div className={classes.navbar}>
         <div className={`u-section-content ${classes["navbar__content"]}`}>
           <nav className={classes.nav}>
-            <img src={hektoLogo} className={classes.logo} />
+            <Link to="">
+              <HektoLogo />
+            </Link>
             <NavLink to="" className={handleIsActive}>
               Home
             </NavLink>
