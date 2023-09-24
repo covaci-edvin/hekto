@@ -1,0 +1,29 @@
+.container {
+  height: 4rem;
+  display: flex;
+}
+
+.input {
+  flex: 1;
+  height: 100%;
+  padding-left: 1.6rem;
+  border: 2px solid var(--color-grey-2);
+  border-right: none;
+
+  &:focus {
+    outline-color: var(--color-primary);
+    outline-offset: -1px;
+  }
+}
+
+.icon {
+  height: 2rem;
+  width: 2rem;
+}
+
+.button {
+  background-color: var(--color-primary);
+  height: 100%;
+  width: 4.8rem;
+  border: none;
+}
