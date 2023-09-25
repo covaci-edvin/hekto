@@ -1,22 +1,22 @@
 import Icon from "../ui/Icon";
-import classes from "./SearchInput.module.scss";
+import classes from "./InputWithButton.module.scss";
 
-function SearchInput({ setSearchParam }) {
+function InputWithButton({ setInputValue, btnContent, placeholder, type }) {
   return (
     <div className={classes.container}>
       <input
         onChange={(e) => {
-          setSearchParam(e.target.value);
+          setInputValue(e.target.value);
         }}
-        type="text"
+        type={type}
         className={`body-text-md ${classes.input}`}
-        placeholder="Search"
+        placeholder={placeholder}
       />
       <button type="submit" className={classes.button}>
-        <Icon iconName="search" className={classes.icon} />
+        {btnContent}
       </button>
     </div>
   );
 }
 
-export default SearchInput;
+export default InputWithButton;

@@ -3,7 +3,7 @@ import Icon from "../../ui/Icon";
 import classes from "./Header.module.scss";
 import HeaderSelectInput from "../../form/HeaderSelectInput";
 import { Link, NavLink } from "react-router-dom";
-import SearchInput from "../../form/SearchInput";
+import InputWithButton from "../../form/InputWithButton";
 import HektoLogo from "../../ui/HektoLogo";
 
 function Header() {
@@ -73,7 +73,12 @@ function Header() {
             </NavLink>
           </nav>
           <form onSubmit={handleSearch} className={classes["search-form"]}>
-            <SearchInput setSearchParam={setSearchParam} />
+            <InputWithButton
+              btnContent={<Icon iconName="search" className={classes.icon} />}
+              setInputValue={setSearchParam}
+              placeholder="Search"
+              type={"text"}
+            />
           </form>
         </div>
       </div>
