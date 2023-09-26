@@ -1,0 +1,39 @@
+.container {
+  height: 4rem;
+  display: flex;
+  border-radius: var(--border-radius-normal);
+  overflow: hidden;
+}
+
+.input {
+  flex: 1;
+  height: 100%;
+  padding-left: 1.6rem;
+  border: 2px solid var(--color-grey-2);
+  border-right: none;
+  border-top-left-radius: inherit;
+  border-bottom-left-radius: inherit;
+
+  &:focus {
+    outline-color: var(--color-primary);
+    outline-offset: -1px;
+  }
+}
+
+.button {
+  background-color: var(--color-primary);
+  height: 100%;
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: var(--color-primary-dark);
+  }
+
+  &:active {
+    background-color: var(--color-primary-light);
+  }
+}
