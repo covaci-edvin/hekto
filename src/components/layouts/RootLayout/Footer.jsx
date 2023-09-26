@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
 import classes from "./Footer.module.scss";
+
 import SignUp from "/src/components/auth/SignUp";
 import HektoLogo from "/src/components/ui/HektoLogo";
 import Socials from "/src/components/ui/Socials";

@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 import classes from "./SignUp.module.scss";
+
 import InputWithButton from "/src/components/form/InputWithButton";
 function SignUp() {
   const [email, setEmail] = useState("");

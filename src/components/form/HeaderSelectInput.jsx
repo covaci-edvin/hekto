@@ -1,4 +1,5 @@
 import classes from "./HeaderSelectInput.module.scss";
+
 import { capitalizeFirstLetter } from "/src/utils/utilityFunctions";
 
 function HeaderSelectInput({ options = [] }) {
