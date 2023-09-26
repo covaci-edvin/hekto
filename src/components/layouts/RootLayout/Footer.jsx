@@ -1,9 +1,10 @@
-import React from "react";
-import HektoLogo from "../../ui/HektoLogo";
+import { Link } from "react-router-dom";
+
 import classes from "./Footer.module.scss";
 import SignUp from "../../auth/SignUp";
+import HektoLogo from "../../ui/HektoLogo";
 import Socials from "../../ui/Socials";
-import { Link } from "react-router-dom";
+
 
 const FOOTER_PAGES = [
   {

@@ -1,13 +1,14 @@
-import React, { useState } from "react";
-import InputWithButton from "../form/InputWithButton";
+import { useState } from "react";
+
 import classes from "./SignUp.module.scss";
+import InputWithButton from "../form/InputWithButton";
 function SignUp() {
   const [email, setEmail] = useState("");
 
   function handleSignUp(e) {
     e.preventDefault();
 
-    //Sign Up Logic
+    //TODO: Add Sign Up Logic
     console.log(email);
   }
 
@@ -18,7 +19,7 @@ function SignUp() {
         btnContent={
           <p className={`body-text-md ${classes["btn-text"]}`}>Sign Up</p>
         }
-        type={"email"}
+        type="email"
         setInputValue={setEmail}
       />
     </form>

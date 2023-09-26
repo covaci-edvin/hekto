@@ -1,23 +1,17 @@
-import React, { useState } from "react";
-import Icon from "../../ui/Icon";
+import Icon from "/src/components/ui/Icon";
+
 import classes from "./Header.module.scss";
-import HeaderSelectInput from "../../form/HeaderSelectInput";
+
+import HeaderSelectInput from "/src/components/form/HeaderSelectInput";
+
 import { Link, NavLink } from "react-router-dom";
-import InputWithButton from "../../form/InputWithButton";
-import HektoLogo from "../../ui/HektoLogo";
+
+import HektoLogo from "/src/components/ui/HektoLogo";
+import Search from "/src/components/search/Search";
 
 function Header() {
-  const [searchParam, setSearchParam] = useState("");
-
   function handleIsActive({ isActive }) {
     return `body-text-md ${classes.navlink} ${isActive ? classes.active : ""}`;
-  }
-
-  function handleSearch(e) {
-    e.preventDefault();
-
-    //Search Logic
-    console.log(searchParam);
   }
 
   return (
@@ -72,14 +66,7 @@ function Header() {
               Shop
             </NavLink>
           </nav>
-          <form onSubmit={handleSearch} className={classes["search-form"]}>
-            <InputWithButton
-              btnContent={<Icon iconName="search" className={classes.icon} />}
-              setInputValue={setSearchParam}
-              placeholder="Search"
-              type={"text"}
-            />
-          </form>
+          <Search />
         </div>
       </div>
     </header>

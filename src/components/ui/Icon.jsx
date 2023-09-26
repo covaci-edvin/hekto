@@ -1,6 +1,5 @@
-import React from "react";
-import Sprite from "../../assets/svgs/sprite.svg";
 import classes from "./Icon.module.scss";
+import Sprite from "../../assets/svgs/sprite.svg";
 
 function Icon({ iconName, className = "" }) {
   return (

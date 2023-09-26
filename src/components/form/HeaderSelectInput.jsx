@@ -1,4 +1,3 @@
-import React from "react";
 import classes from "./HeaderSelectInput.module.scss";
 import { capitalizeFirstLetter } from "../../utils/utilityFunctions";
 

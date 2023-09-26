@@ -1,4 +1,3 @@
-import Icon from "../ui/Icon";
 import classes from "./InputWithButton.module.scss";
 
 function InputWithButton({ setInputValue, btnContent, placeholder, type }) {
