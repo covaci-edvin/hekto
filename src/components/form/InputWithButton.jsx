@@ -1,17 +1,17 @@
-import classes from "./InputWithButton.module.scss";
+import styles from "./InputWithButton.module.scss";
 
 function InputWithButton({ setInputValue, btnContent, placeholder, type }) {
   return (
-    <div className={classes.container}>
+    <div className={styles.container}>
       <input
         onChange={(e) => {
           setInputValue(e.target.value);
         }}
         type={type}
-        className={`body-text-md ${classes.input}`}
+        className={`body-text-md ${styles.input}`}
         placeholder={placeholder}
       />
-      <button type="submit" className={classes.button}>
+      <button type="submit" className={styles.button}>
         {btnContent}
       </button>
     </div>

@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import classes from "./SignUp.module.scss";
+import styles from "./SignUp.module.scss";
 
 import InputWithButton from "/src/components/form/InputWithButton";
 function SignUp() {
@@ -18,7 +18,7 @@ function SignUp() {
       <InputWithButton
         placeholder="Enter Email Address"
         btnContent={
-          <p className={`body-text-md ${classes["btn-text"]}`}>Sign Up</p>
+          <p className={`body-text-md ${styles["btn-text"]}`}>Sign Up</p>
         }
         type="email"
         setInputValue={setEmail}

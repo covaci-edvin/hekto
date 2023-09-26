@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import classes from "./Search.module.scss";
+import styles from "./Search.module.scss";
 
 import InputWithButton from "/src/components/form/InputWithButton";
 import Icon from "/src/components/ui/Icon";
@@ -15,9 +15,9 @@ function Search() {
   }
 
   return (
-    <form onSubmit={handleSearch} className={classes.form}>
+    <form onSubmit={handleSearch} className={styles.form}>
       <InputWithButton
-        btnContent={<Icon iconName="search" className={classes.icon} />}
+        btnContent={<Icon iconName="search" className={styles.icon} />}
         setInputValue={setSearchParam}
         placeholder="Search"
         type="text"

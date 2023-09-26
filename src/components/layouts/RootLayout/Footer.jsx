@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-import classes from "./Footer.module.scss";
+import styles from "./Footer.module.scss";
 
 import SignUp from "/src/components/auth/SignUp";
 import HektoLogo from "/src/components/ui/HektoLogo";
@@ -41,11 +41,11 @@ const FOOTER_PAGES = [
 
 function ListWithTitle({ title, listItems = [] }) {
   return (
-    <div className={classes["list-container"]}>
+    <div className={styles["list-container"]}>
       <h1 className="subtitle-2">{title}</h1>
-      <ul className={classes.list}>
+      <ul className={styles.list}>
         {listItems.map((item) => (
-          <li key={item} className={`body-text-md ${classes["list-item"]}`}>
+          <li key={item} className={`body-text-md ${styles["list-item"]}`}>
             <a href="#">{item}</a>
           </li>
         ))}
@@ -57,21 +57,21 @@ function ListWithTitle({ title, listItems = [] }) {
 function Footer() {
   return (
     <footer>
-      <div className={classes.footer}>
-        <div className={`u-section-content ${classes["footer-content"]}`}>
-          <div className={classes.info}>
+      <div className={styles.footer}>
+        <div className={`u-section-content ${styles["footer-content"]}`}>
+          <div className={styles.info}>
             <Link to="">
               <HektoLogo />
             </Link>
             <SignUp />
-            <div className={classes.contact}>
+            <div className={styles.contact}>
               <h1 className="body-text-md">Contact Info</h1>
               <p className="body-text-md">
                 17 Princess Road, London, Greater London NW1 8JR, UK
               </p>
             </div>
           </div>
-          <div className={classes.pages}>
+          <div className={styles.pages}>
             {FOOTER_PAGES.map((item) => (
               <ListWithTitle
                 key={item.title}
@@ -82,8 +82,8 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className={classes["bottom-bar"]}>
-        <div className={`u-section-content ${classes["bottom-bar-content"]}`}>
+      <div className={styles["bottom-bar"]}>
+        <div className={`u-section-content ${styles["bottom-bar-content"]}`}>
           <p className="body-text-md">&copy;Webecy - All Rights Reserved</p>
           <Socials />
         </div>

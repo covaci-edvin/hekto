@@ -1,21 +1,21 @@
 import Icon from "./Icon";
-import classes from "./Socials.module.scss";
+import styles from "./Socials.module.scss";
 
 function Socials() {
   return (
-    <ul className={classes.list}>
-      <li className={classes["list-item"]}>
-        <a href="#" className={classes.link}>
+    <ul className={styles.list}>
+      <li className={styles["list-item"]}>
+        <a href="#" className={styles.link}>
           <Icon iconName={"facebook"} />
         </a>
       </li>
-      <li className={classes["list-item"]}>
-        <a href="#" className={classes.link}>
+      <li className={styles["list-item"]}>
+        <a href="#" className={styles.link}>
           <Icon iconName={"instagram"} />
         </a>
       </li>
-      <li className={classes["list-item"]}>
-        <a href="#" className={classes.link}>
+      <li className={styles["list-item"]}>
+        <a href="#" className={styles.link}>
           <Icon iconName={"twitter"} />
         </a>
       </li>
