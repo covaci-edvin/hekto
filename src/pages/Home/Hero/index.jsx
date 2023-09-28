@@ -1,19 +1,16 @@
-import { useState } from "react";
-
-import OfferImgPreloader from "./OfferImgPreloader";
 import HeroSlider from "./Slider";
 import styles from "./index.module.scss";
 
 import ImgBg from "/src/assets/svgs/hero-offer-bg.svg";
 import ImgBgDesign from "/src/assets/imgs/hero-design-lamp.png";
 import Error from "/src/components/ui/Error";
-import { useFetch } from "/src/hooks/useFetch";
+import { useFetchAndPreloadImg } from "/src/hooks/useFetchAndPreloadImg";
 
 const OFFERS_URL = "http://localhost:3000/products?offer=true";
 
 function Hero({ imgsPreloaded }) {
-  const { data, isPending, error } = useFetch(OFFERS_URL);
-  const [offerImgPreloaded, setOfferImgPreloaded] = useState(false);
+  const { data, isPending, error, offerImgPreloaded } =
+    useFetchAndPreloadImg(OFFERS_URL);
 
   console.log({ data, isPending, error, imgsPreloaded, offerImgPreloaded });
 
@@ -40,23 +37,11 @@ function Hero({ imgsPreloaded }) {
       )}
 
       <div className={styles.content}>
-        {data && !offerImgPreloaded && (
-          <OfferImgPreloader
-            data={data}
-            setOfferImgPreloaded={setOfferImgPreloaded}
-          />
-        )}
         {error && <Error message={"Something went wrong :("} />}
         {(isPending || !offerImgPreloaded) && (
           <h1 className="heading-4">Loading...</h1>
         )}
-        {data && offerImgPreloaded && (
-          <HeroSlider
-            data={data}
-            setOfferImgPreloaded={setOfferImgPreloaded}
-            offerImgPreloaded={offerImgPreloaded}
-          />
-        )}
+        {data && offerImgPreloaded && <HeroSlider data={data} />}
       </div>
     </section>
   );

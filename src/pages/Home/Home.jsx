@@ -11,11 +11,7 @@ const images = [ImgBg, ImgBgDesign, offerBgImg];
 function Home() {
   const { imagesPreloaded } = useImagePreloader(images);
 
-  return (
-    <>
-      <Hero imgsPreloaded={imagesPreloaded} />
-    </>
-  );
+  return <Hero imgsPreloaded={imagesPreloaded} />;
 }
 
 export default Home;
