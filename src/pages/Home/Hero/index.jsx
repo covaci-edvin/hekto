@@ -12,8 +12,6 @@ function Hero({ imgsPreloaded }) {
   const { data, isPending, error, offerImgPreloaded } =
     useFetchAndPreloadImg(OFFERS_URL);
 
-  console.log({ data, isPending, error, imgsPreloaded, offerImgPreloaded });
-
   return (
     <section className={styles.section}>
       {imgsPreloaded && (

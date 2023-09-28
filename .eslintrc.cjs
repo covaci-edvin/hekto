@@ -19,6 +19,12 @@ module.exports = {
     ],
     "react/prop-types": 0,
     "prettier/prettier" : "error",
+    'no-console': [
+      'warn',
+      {
+        allow: ['error', 'warn'],
+      },
+    ],
   },
   overrides: [
     {
