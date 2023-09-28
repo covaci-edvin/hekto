@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 import { useCache } from "/src/context/cache";
 
-export const useFetch = (url) => {
+export default function useFetch(url) {
   const [data, setData] = useState(null);
   const [isPending, setIsPending] = useState(false);
   const [error, setError] = useState(null);
@@ -39,4 +39,4 @@ export const useFetch = (url) => {
   }, [url]);
 
   return { data, isPending, error };
-};
+}
