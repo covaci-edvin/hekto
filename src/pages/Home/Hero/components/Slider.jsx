@@ -1,10 +1,10 @@
 import { useEffect, useRef } from "react";
 import { register } from "swiper/element/bundle";
 
-import HeroSlide from "./Slide";
+import Slide from "./Slide";
 import styles from "./Slider.module.scss";
 
-function HeroSlider({ data }) {
+function Slider({ data }) {
   const swiperRef = useRef(null);
 
   useEffect(() => {
@@ -57,11 +57,11 @@ function HeroSlider({ data }) {
     <swiper-container class={styles.swiper} init="false" ref={swiperRef}>
       {data.map((offer) => (
         <swiper-slide key={offer.id}>
-          <HeroSlide offer={offer} lazy="true" />
+          <Slide offer={offer} lazy="true" />
         </swiper-slide>
       ))}
     </swiper-container>
   );
 }
 
-export default HeroSlider;
+export default Slider;

@@ -60,7 +60,7 @@ function Header() {
             <NavLink to="" className={handleIsActive}>
               Home
             </NavLink>
-            <NavLink to="products" className={handleIsActive}>
+            <NavLink to="shop" className={handleIsActive}>
               Shop
             </NavLink>
           </nav>

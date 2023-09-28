@@ -6,7 +6,7 @@ import offerBgImg from "/src/assets/svgs/hero-offer-discount-bg.svg";
 
 import { Link } from "react-router-dom";
 
-function HeroSlide({ offer }) {
+function Slide({ offer }) {
   return (
     <div className={`u-section-content ${styles.container}`}>
       <div className={styles.slide}>
@@ -18,7 +18,7 @@ function HeroSlide({ offer }) {
           <p className={`body-text-md ${styles["description"]}`}>
             {offer.description}
           </p>
-          <Link to={`products/${offer.id}`} className={styles.btn}>
+          <Link to={`shop/${offer.id}`} className={styles.btn}>
             <Button>Shop Now</Button>
           </Link>
         </div>
@@ -40,4 +40,4 @@ function HeroSlide({ offer }) {
   );
 }
 
-export default HeroSlide;
+export default Slide;
