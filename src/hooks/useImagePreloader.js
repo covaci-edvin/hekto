@@ -21,7 +21,7 @@ export default function useImagePreloader(imageList) {
       setImagesPreloaded(true);
     }
 
-    effect();
+    imageList && effect();
   }, [imageList]);
 
   return { imagesPreloaded };
