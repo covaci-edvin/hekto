@@ -4,9 +4,7 @@ function preloadImage(src) {
   return new Promise((resolve, reject) => {
     const img = new Image();
     img.onload = resolve;
-    img.onerror = img.onabort = function () {
-      reject();
-    };
+    img.onerror = img.onabort = reject;
     img.src = src;
   });
 }
