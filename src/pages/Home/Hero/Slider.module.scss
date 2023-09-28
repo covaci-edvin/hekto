@@ -1,0 +1,8 @@
+@import "/src/assets/styles//abstracts/animations";
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    animation: .4s ease .1s animateFadeIn forwards;
+  }

@@ -1,0 +1,74 @@
+@import "/src/assets/styles//abstracts/animations";
+
+
+.container {
+    box-sizing: border-box;
+    width:  100%;
+}
+
+.slide {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3.6rem;
+}
+
+.info {
+    grid-column: 1/2;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.6rem;
+    padding-left: 10rem;
+}
+
+.display-text{
+    color: var(--color-primary);
+}
+
+.description {
+    color: var(--color-grey-3);
+}
+
+.btn {
+    margin-top: 2.4rem;
+}
+
+.img-container {
+    grid-column: 2/3;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.img {
+    max-width: 56rem;
+    animation: animateFadeIn 1s;
+}
+
+.discount-container{
+    position: absolute;
+    top: 0;
+    right: 0rem;
+    width: fit-content;
+}
+
+.discount-bg {
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(var(--shadow-md));
+}
+
+.discount-text {
+    line-height: 1.2 !important;
+    color: var(--color-white);
+    max-width: 9rem;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

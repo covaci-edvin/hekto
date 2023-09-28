@@ -1,7 +1,7 @@
 :root {
   --color-white: #ffffff;
   --color-grey-1: #f8f8fd;
-  --color-grey-2: #e5e0fc;
+  --color-grey-2: #f2f0ff;
   --color-grey-3: #8a8fb9;
   --color-black: #101750;
 
@@ -16,7 +16,13 @@
   --color-info: #603eff;
   --color-info-light: #ddd6ff;
   --color-success: #19d16f;
+  --color-success-dark: #22b868;
   --color-success-light: #92f2bf;
 
   --border-radius-normal: 0.3rem;
+
+  --shadow-md:  0 .4rem 2.5rem rgba(49, 32, 138, .1);
+  --shadow-lg: 0 .8rem 4rem rgba(43, 0, 255, 0.05);
 }
+
+
