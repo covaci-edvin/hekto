@@ -2,7 +2,7 @@ import { Link, NavLink } from "react-router-dom";
 
 import styles from "./Header.module.scss";
 
-import HeaderSelectInput from "/src/components/form/HeaderSelectInput";
+import SelectInput from "/src/components/form/SelectInput";
 import Search from "/src/components/search/Search";
 import HektoLogo from "/src/components/ui/HektoLogo";
 import Icon from "/src/components/ui/Icon";
@@ -34,8 +34,8 @@ function Header() {
               id="form-page-preferences"
               className={styles["preferences-form"]}
             >
-              <HeaderSelectInput options={["english", "română", "русский"]} />
-              <HeaderSelectInput options={["USD", "MDL", "EUR"]} />
+              <SelectInput options={["english", "română", "русский"]} />
+              <SelectInput options={["USD", "MDL", "EUR"]} />
             </form>
             <Link className={`subtitle-4 ${styles.linkBtn}`} to={"login"}>
               Login
