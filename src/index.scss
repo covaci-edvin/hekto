@@ -2,3 +2,19 @@
 @import "./assets/styles/base/base";
 @import "./assets/styles/base/typography";
 @import "./assets/styles/abstracts/variables";
+
+  swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .pagination{
+    // position: absolute;
+    // bottom: 0;
+    width: 100%;
+    height: 20px;
+    padding-bottom: 1rem;
+    z-index: 20;
+  }

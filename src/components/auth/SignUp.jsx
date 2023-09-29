@@ -3,13 +3,14 @@ import { useState } from "react";
 import styles from "./SignUp.module.scss";
 
 import InputWithButton from "/src/components/form/InputWithButton";
+
 function SignUp() {
   const [email, setEmail] = useState("");
 
   function handleSignUp(e) {
     e.preventDefault();
 
-    //TODO: Add Sign Up Logic
+    // TODO: Add Sign Up Logic
     console.log(email);
   }
 

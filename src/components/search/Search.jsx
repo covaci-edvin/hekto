@@ -11,7 +11,7 @@ function Search() {
   function handleSearch(e) {
     e.preventDefault();
 
-    console.log(searchParam); //TODO: Add Search Logic
+    // TODO: Add Search Logic
   }
 
   return (

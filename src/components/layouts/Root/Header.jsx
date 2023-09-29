@@ -1,13 +1,11 @@
-import Icon from "/src/components/ui/Icon";
+import { Link, NavLink } from "react-router-dom";
 
 import styles from "./Header.module.scss";
 
 import HeaderSelectInput from "/src/components/form/HeaderSelectInput";
-
-import { Link, NavLink } from "react-router-dom";
-
-import HektoLogo from "/src/components/ui/HektoLogo";
 import Search from "/src/components/search/Search";
+import HektoLogo from "/src/components/ui/HektoLogo";
+import Icon from "/src/components/ui/Icon";
 
 function Header() {
   function handleIsActive({ isActive }) {
@@ -17,7 +15,7 @@ function Header() {
   return (
     <header>
       <div className={styles.topbar}>
-        <div className={`u-section-content ${styles["topbar__content"]}`}>
+        <div className={`u-section-content ${styles.topbar__content}`}>
           <div className={styles.contacts}>
             <a
               className={`subtitle-4 ${styles.link}`}
@@ -54,7 +52,7 @@ function Header() {
         </div>
       </div>
       <div className={styles.navbar}>
-        <div className={`u-section-content ${styles["navbar__content"]}`}>
+        <div className={`u-section-content ${styles.navbar__content}`}>
           <nav className={styles.nav}>
             <Link to="">
               <HektoLogo />

@@ -5,27 +5,36 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
-import RootLayout from "./components/layouts/RootLayout/RootLayout";
-import Cart from "./pages/Cart/Cart";
-import Home from "./pages/Home/Home";
-import Login from "./pages/Login/Login";
-import Shop from "./pages/Shop/Shop";
-import Wishlist from "./pages/Wishlist/Wishlist";
+import Root from "./components/layouts/Root";
+import { CacheProvider } from "./context/cache";
+import Cart from "./pages/Cart";
+import Home from "./pages/Home";
+import Login from "./pages/Login";
+import Product from "./pages/Product";
+import Shop from "./pages/Shop";
+import Wishlist from "./pages/Wishlist";
 
 const routes = createRoutesFromElements(
-  <Route path="/" element={<RootLayout />}>
+  <Route path="/" element={<Root />}>
     <Route index element={<Home />} />
-    <Route path="shop" element={<Shop />} />
+    <Route path="shop">
+      <Route index element={<Shop />} />
+      <Route path=":id" element={<Product />} />
+    </Route>
     <Route path="login" element={<Login />} />
     <Route path="wishlist" element={<Wishlist />} />
     <Route path="cart" element={<Cart />} />
-  </Route>
+  </Route>,
 );
 
 const router = createBrowserRouter(routes);
 
 function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <CacheProvider>
+      <RouterProvider router={router} />;
+    </CacheProvider>
+  );
 }
 
 export default App;

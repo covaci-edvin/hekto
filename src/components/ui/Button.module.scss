@@ -1,0 +1,33 @@
+@import "/src/assets/styles/base/typography";
+
+.btn {
+    @extend .subtitle-4;
+    border-radius: var(--border-radius-normal);
+    border: none;
+    color: var(--color-white);
+    cursor: pointer;
+}
+
+.md {
+    padding: 1.6rem 4rem;
+}
+
+.lg {
+    padding: 2.4rem 5.6rem;
+}
+
+.default {
+    background-color: var(--color-primary);
+
+    &:hover {
+        background-color: var(--color-primary-dark);
+    }
+}
+
+.green {
+    background-color: var(--color-success);
+
+    &:hover {
+        background-color: var(--color-success-dark);
+    }
+}

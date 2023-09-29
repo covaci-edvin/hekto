@@ -6,7 +6,7 @@
       "title": "Cantilever Couch",
       "image": "p1.png",
       "price": 42.0,
-      "description": "Relax in style with this comfortable couch",
+      "description": "Relax in style with this comfortable couch. Relax in style with this comfortable chair.Relax in style with this comfortable chair.Relax in style with this comfortable chair.Relax in style with this comfortable chair.",
       "colors": ["maroon"],
       "brand": "Coaster Furniture",
       "rating": 4,
@@ -450,7 +450,8 @@
       "special-offer": true,
       "new-arrival": false
     }
-  ],
+  ]
+  ,
   "filters": [
     {
       "name": "brand",
