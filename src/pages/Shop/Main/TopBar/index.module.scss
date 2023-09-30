@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.controls {
+    display: flex;
+    gap: 2.4rem;
+}
+
+.request{
+    margin-top: .8rem;
+    color: var(--color-grey-3);
+}

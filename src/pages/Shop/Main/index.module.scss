@@ -1,0 +1,7 @@
+@import "/src/assets/styles/abstracts/utilities";
+
+.section {
+    @extend .u-section-content;
+    margin-top: 12.8rem;
+    margin-bottom: 12.8rem;
+}
