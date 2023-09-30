@@ -3,7 +3,7 @@ import styles from "./index.module.scss";
 
 import CustomSelectInput from "/src/components/form/CustomSelectInput";
 
-const SORTBY_OPTIONS = [
+const SORT_BY_OPTIONS = [
   { text: "best match", value: "best-match" },
   { text: "new arrival", value: "new-arrival" },
   { text: "price low to high", value: "price-l-h" },
@@ -12,7 +12,7 @@ const SORTBY_OPTIONS = [
   { text: "name Z-A", value: "name-z-a" },
 ];
 
-const PERPAGE_OPTIONS = [
+const PER_PAGE_OPTIONS = [
   { text: 5, value: 5 },
   { text: 10, value: 10 },
   { text: 15, value: 15 },
@@ -28,13 +28,13 @@ function Topbar({ viewMode, setViewMode }) {
       </div>
       <div className={styles.controls}>
         <CustomSelectInput
-          options={PERPAGE_OPTIONS}
-          defaultOption={PERPAGE_OPTIONS[1]}
+          options={PER_PAGE_OPTIONS}
+          defaultOption={PER_PAGE_OPTIONS[1]}
           title="Per Page:"
         />
         <CustomSelectInput
-          options={SORTBY_OPTIONS}
-          defaultOption={SORTBY_OPTIONS[0]}
+          options={SORT_BY_OPTIONS}
+          defaultOption={SORT_BY_OPTIONS[0]}
           title="Sort By:"
         />
         <ViewControl viewMode={viewMode} setViewMode={setViewMode} />

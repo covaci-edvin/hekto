@@ -42,9 +42,7 @@ function CustomSelectInput({ defaultOption, options, title }) {
         <span className={styles.title}>{title}</span>
         <div className={inputClasses}>
           <span className={styles.value}>
-            {typeof value.text === "string"
-              ? capitalizeFirstLetter(value.text)
-              : value.text}
+            {capitalizeFirstLetter(value.text)}
           </span>
           <span className={iconClasses}>
             <Icon iconName="chevron" className={styles.icon} />
@@ -60,9 +58,7 @@ function CustomSelectInput({ defaultOption, options, title }) {
               onClick={setValueHandler}
               data-value={option.value}
             >
-              {typeof option.text === "string"
-                ? capitalizeFirstLetter(option.text)
-                : option.text}
+              {capitalizeFirstLetter(option.text)}
             </li>
           ))}
         </ul>

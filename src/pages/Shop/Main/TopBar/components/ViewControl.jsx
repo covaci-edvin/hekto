@@ -9,7 +9,7 @@ function ViewControl({ viewMode, setViewMode }) {
       <div className={styles.options}>
         <div
           onClick={() => {
-            setViewMode("list");
+            !(viewMode === "list") && setViewMode("list");
           }}
           className={`${styles.option} ${
             viewMode === "list" ? styles.active : ""
@@ -19,7 +19,7 @@ function ViewControl({ viewMode, setViewMode }) {
         </div>
         <div
           onClick={() => {
-            setViewMode("grid");
+            !(viewMode === "grid") && setViewMode("grid");
           }}
           className={`${styles.option} ${
             viewMode === "grid" ? styles.active : ""
