@@ -1,8 +1,8 @@
-import styles from "./HeaderSelectInput.module.scss";
+import styles from "./SelectInput.module.scss";
 
 import { capitalizeFirstLetter } from "/src/utils/utilityFunctions";
 
-function HeaderSelectInput({ options = [] }) {
+function SelectInput({ options = [] }) {
   return (
     <select className={`subtitle-4 ${styles.select}`}>
       {options.map((option, index) => (
@@ -14,4 +14,4 @@ function HeaderSelectInput({ options = [] }) {
   );
 }
 
-export default HeaderSelectInput;
+export default SelectInput;

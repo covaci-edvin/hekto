@@ -1,0 +1,43 @@
+@import "/src/assets/styles/base/typography";
+
+
+.container {
+    display: flex;
+    align-items: center
+}
+
+.options {
+    display: flex;
+    align-items: center;
+    gap: .4rem
+}
+
+.option {
+    cursor: pointer;
+    height: 2rem;
+    width: 2rem;
+ 
+
+    &:hover svg{
+        fill: var(--color-primary-light);
+    }
+    
+}
+
+.active svg {
+        fill: var(--color-primary-dark);
+    }
+
+.icon {
+    height: 100%;
+    width: 100%;
+    fill: var(--color-black);
+    transition: fill .2s;
+}
+
+.title {
+    @extend .body-text-md;
+    color: var(--color-black);
+    margin-right: .8rem;
+    margin-bottom: .3rem
+}
