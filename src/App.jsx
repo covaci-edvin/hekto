@@ -32,7 +32,7 @@ const router = createBrowserRouter(routes);
 function App() {
   return (
     <CacheProvider>
-      <RouterProvider router={router} />;
+      <RouterProvider router={router} />
     </CacheProvider>
   );
 }

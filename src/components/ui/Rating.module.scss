@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.star {
+    fill: var(--color-grey-2);
+    height: 1.2rem;
+    width: 1.2rem;
+}
+
+.rated {
+    fill: var((--color-secondary));
+}

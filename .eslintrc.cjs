@@ -18,6 +18,7 @@ module.exports = {
       { allowConstantExport: true },
     ],
     "react/prop-types": 0,
+    'react-hooks/exhaustive-deps': 'off',
     "prettier/prettier" : "error",
     'no-console': [
       'warn',
