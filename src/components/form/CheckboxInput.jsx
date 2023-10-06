@@ -8,7 +8,7 @@ function CheckboxInput({
   color = "pink",
   children,
   dataValue,
-  type = "default",
+  withCheck,
   isChecked,
   onChange,
 }) {
@@ -26,7 +26,7 @@ function CheckboxInput({
         onChange={onChange}
       />
       <label htmlFor={id} className={styles.container}>
-        {type !== "color-filter" && (
+        {withCheck && (
           <span className={classesCheckBox}>
             <Icon iconName="check" className={styles.icon} />
           </span>

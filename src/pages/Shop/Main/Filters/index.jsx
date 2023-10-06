@@ -1,5 +1,5 @@
-import DefaultFilter from "./components/DefaultFilter";
-import PriceFilter from "./components/PriceFilter";
+import DefaultFilter from "./Default/DefaultFilter";
+import PriceFilter from "./Price/PriceFilter";
 import styles from "./index.module.scss";
 
 import useFetch from "/src/hooks/useFetch";
