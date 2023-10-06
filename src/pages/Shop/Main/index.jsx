@@ -3,8 +3,8 @@ import { useState } from "react";
 import Filters from "./Filters";
 import Products from "./Products";
 import Topbar from "./TopBar";
+import { ProductsProvider } from "./contexts/products";
 import styles from "./index.module.scss";
-import { ProductsProvider } from "./products-context";
 
 function Main() {
   const [viewMode, setViewMode] = useState("list");

@@ -13,7 +13,7 @@ function CheckboxInput({
   onChange,
 }) {
   const id = useId();
-  const classesCheckBox = `${styles["icon-container"]} ${styles[color]}`;
+  const checkboxClassNames = `${styles["icon-container"]} ${styles[color]}`;
 
   return (
     <>
@@ -27,7 +27,7 @@ function CheckboxInput({
       />
       <label htmlFor={id} className={styles.container}>
         {withCheck && (
-          <span className={classesCheckBox}>
+          <span className={checkboxClassNames}>
             <Icon iconName="check" className={styles.icon} />
           </span>
         )}

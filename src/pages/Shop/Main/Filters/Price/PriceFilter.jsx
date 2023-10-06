@@ -12,10 +12,10 @@ function PriceFilter({ filter }) {
     ${option[1] === "MAX" ? " +" : ` - $${option[1].toFixed(2)}`}`;
   }
 
-  const renderFilter = (option, index) => {
+  const renderFilter = (option) => {
     return (
       <CheckboxInput
-        key={index}
+        key={option}
         dataValue={option}
         color={filter.color}
         withCheck

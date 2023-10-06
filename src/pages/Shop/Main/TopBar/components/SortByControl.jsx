@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 
 import CustomSelectInput from "/src/components/form/CustomSelectInput";
+import { sortKey, orderKey } from "/src/utils/constants";
 
 const sortOptions = [
   { text: "best match", value: "best-match" },
@@ -16,8 +17,8 @@ function SortByControl() {
 
   const [searchParams, setSearchParams] = useSearchParams();
 
-  const sort = searchParams.get("_sort");
-  const order = searchParams.get("_order");
+  const sort = searchParams.get(sortKey);
+  const order = searchParams.get(orderKey);
 
   useEffect(() => {
     if (sort && order) {
@@ -33,13 +34,13 @@ function SortByControl() {
   function onHandleSort(value) {
     setSearchParams((params) => {
       if (value === "best-match") {
-        params.delete("_sort");
-        params.delete("_order");
+        params.delete(sortKey);
+        params.delete(orderKey);
       } else {
         const sort = value.includes("price") ? "price" : "title";
         const order = value.includes("asc") ? "asc" : "desc";
-        params.set("_sort", sort);
-        params.set("_order", order);
+        params.set(sortKey, sort);
+        params.set(orderKey, order);
       }
 
       return params;

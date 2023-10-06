@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 
 import CustomSelectInput from "/src/components/form/CustomSelectInput";
+import { limitKey } from "/src/utils/constants";
 
 const perPageOptions = [
   { text: 5, value: 5 },
@@ -15,7 +16,7 @@ function PerPageControl() {
 
   const [searchParams, setSearchParams] = useSearchParams();
 
-  const limit = searchParams.get("_limit");
+  const limit = searchParams.get(limitKey);
 
   useEffect(() => {
     setPerPage({ text: limit, value: limit });
@@ -23,7 +24,7 @@ function PerPageControl() {
 
   function onHandleLimit(value) {
     setSearchParams((params) => {
-      params.set("_limit", value);
+      params.set(limitKey, value);
       return params;
     });
   }

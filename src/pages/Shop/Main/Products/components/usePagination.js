@@ -1,7 +1,9 @@
 import { useCallback, useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
 
-import { useProducts } from "../../products-context";
+import { limitKey, pageKey } from "/src/utils/constants";
+
+import { useProducts } from "../../contexts/products";
 
 const usePagination = () => {
   const { totalCount } = useProducts();
@@ -10,7 +12,7 @@ const usePagination = () => {
   const resetPage = useCallback(
     () =>
       setSearchParams((params) => {
-        params.set("_page", 1);
+        params.set(pageKey, 1);
         return params;
       }),
     [],
@@ -19,7 +21,7 @@ const usePagination = () => {
   const addParams = useCallback(
     () =>
       setSearchParams((params) => {
-        params.append("_page", 1);
+        params.append(pageKey, 1);
         params.append("_limit", 10);
         return params;
       }),
@@ -28,13 +30,13 @@ const usePagination = () => {
 
   const setPage = (page) => {
     setSearchParams((params) => {
-      params.set("_page", page);
+      params.set(pageKey, page);
       return params;
     });
   };
 
-  const currentPage = +searchParams.get("_page");
-  const limit = +searchParams.get("_limit");
+  const currentPage = +searchParams.get(pageKey);
+  const limit = +searchParams.get(limitKey);
   useEffect(() => {
     const areThereNoParams = !currentPage && !limit;
 
