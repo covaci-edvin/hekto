@@ -4,15 +4,24 @@ import styles from "./CustomSelectInput.module.scss";
 
 import Icon from "/src/components/ui/Icon";
 
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import useClickedOutside from "../../hooks/useClickedOutside";
 
-function CustomSelectInput({ defaultOption, options, title }) {
+function CustomSelectInput({
+  defaultOption,
+  options,
+  title,
+  onChange = () => {},
+}) {
   const inputRef = useRef();
 
   const [isOpened, setIsOpened] = useState(false);
   const [value, setValue] = useState(defaultOption);
+
+  useEffect(() => {
+    setValue(defaultOption);
+  }, [defaultOption]);
 
   useClickedOutside(inputRef, () => setIsOpened(false), isOpened);
 
@@ -23,8 +32,10 @@ function CustomSelectInput({ defaultOption, options, title }) {
   function setValueHandler(e) {
     const optionValue = e.target.dataset.value;
     const optionText = e.target.textContent;
-    if (optionValue !== value)
+    if (optionValue !== value.value) {
       setValue({ text: optionText, value: optionValue });
+      onChange(optionValue);
+    }
     toggleList();
   }
 

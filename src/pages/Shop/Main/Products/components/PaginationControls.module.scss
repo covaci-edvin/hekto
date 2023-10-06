@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    gap: 1.6rem;
+}
+
+.page {
+    cursor: pointer;
+    color: var(--color-grey-3);
+    padding: .8rem;
+    transition: color .2s;
+
+    &:hover {
+        color: var(--color-black);
+    }
+}
+
+.active {
+    color: var(--color-primary-dark);
+}

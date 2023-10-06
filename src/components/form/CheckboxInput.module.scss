@@ -1,0 +1,55 @@
+
+
+.checkbox {
+    display: none;
+    pointer-events: none;
+}
+
+.container {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: .8rem;
+}
+  
+.icon-container {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    opacity: .3;
+    transition: opacity .3s;
+}
+
+.blue{ 
+    background-color: var(--color-info);
+}
+
+.yellow {
+    background-color: var(--color-secondary);
+}
+
+.pink {
+    background-color: var(--color-primary);
+}
+  
+.icon {
+    fill: none;
+}
+  
+  
+.checkbox:checked + label {
+    .icon-container {
+        opacity: 1;
+    }
+
+    .icon {
+        fill: var(--color-white);
+    }
+
+    div {
+        background-color: var(--color-grey-2);
+    }
+}
+
+  
+  

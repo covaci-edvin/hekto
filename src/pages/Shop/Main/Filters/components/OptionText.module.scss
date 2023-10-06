@@ -1,0 +1,8 @@
+.text {
+    color: var(--color-grey-3);
+    transition: color .3s;
+
+    &:hover {
+        color: var(--color-black);
+    }
+}
