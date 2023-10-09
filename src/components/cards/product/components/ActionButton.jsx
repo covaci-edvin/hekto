@@ -4,9 +4,9 @@ import styles from "./ActionButton.module.scss";
 
 function ActionButton({ iconName }) {
   return (
-    <div className={styles.container}>
+    <button className={styles.container}>
       <Icon iconName={iconName} className={styles.icon} />
-    </div>
+    </button>
   );
 }
 
