@@ -14,7 +14,7 @@ function DefaultFilter({ filter }) {
     switch (filter.name) {
       case "rating":
         return <Rating nrOfStars={option} />;
-      case "color":
+      case "colors":
         return <ColorFilterSelector color={option} />;
       default:
         return (
@@ -32,7 +32,7 @@ function DefaultFilter({ filter }) {
         key={option}
         dataValue={option}
         color={filter.color}
-        withCheck={filter.name !== "color"}
+        withCheck={filter.name !== "colors"}
         isChecked={urlParams?.includes(`${option}`) || false}
         onChange={handleChange}
       >

@@ -7,13 +7,14 @@
       "image": "p1.png",
       "price": 42.0,
       "description": "Relax in style with this comfortable couch. Relax in style with this comfortable chair.Relax in style with this comfortable chair.Relax in style with this comfortable chair.Relax in style with this comfortable chair.",
-      "color": ["maroon"],
+      "colors": ["maroon"],
       "brand": "Coaster Furniture",
       "rating": 4,
       "discount": 50,
       "offer": true,
       "special-offer": false,
-      "new-arrival": false
+      "new-arrival": false,
+      "old-price": 60.0
     },
     {
       "id": "p2",
@@ -22,13 +23,14 @@
       "image": "p2.png",
       "price": 80.0,
       "description": "Relax in style with this comfortable couch",
-      "color": ["red", "green"],
+      "colors": ["red", "green"],
       "brand": "Unique Furniture Restor",
       "rating": 5,
       "discount": 20,
       "offer": true,
       "special-offer": false,
-      "new-arrival": false
+      "new-arrival": false,
+      "old-price": 100.0
     },
     {
       "id": "p3",
@@ -37,13 +39,14 @@
       "image": "p3.png",
       "price": 35.0,
       "description": "Relax in style with this comfortable couch",
-      "color": ["aqua", "purple"],
+      "colors": ["aqua", "purple"],
       "brand": "Coaster Furniture",
       "rating": 4,
       "discount": 30,
       "offer": true,
       "special-offer": false,
-      "new-arrival": false
+      "new-arrival": false,
+      "old-price": 50.0
     },
     {
       "id": "p4",
@@ -52,13 +55,14 @@
       "image": "p4.png",
       "price": 42.0,
       "description": "Relax in style with this comfortable chair.",
-      "color": ["yellow", "fuchsia", "teal"],
+      "colors": ["yellow", "fuchsia", "teal"],
       "brand": "Coaster Furniture",
       "rating": 3,
       "discount": 20,
       "offer": false,
       "special-offer": false,
-      "new-arrival": false
+      "new-arrival": false,
+      "old-price": 60.0
     },
     {
       "id": "p5",
@@ -67,13 +71,14 @@
       "image": "p5.png",
       "price": 65.0,
       "description": "A beautiful dining table for your home.",
-      "color": ["lime"],
+      "colors": ["lime"],
       "brand": "Coaster Furniture",
       "rating": 4,
       "discount": 25,
       "offer": false,
       "special-offer": false,
-      "new-arrival": false
+      "new-arrival": false,
+      "old-price": 90.0
     },
     {
       "id": "p6",
@@ -82,13 +87,14 @@
       "image": "p6.png",
       "price": 55.0,
       "description": "Relax in style with this comfortable recliner.",
-      "color": ["blue", "olive"],
+      "colors": ["blue", "olive"],
       "brand": "Unique Furniture Restor",
       "rating": 5,
       "discount": 15,
       "offer": false,
       "special-offer": false,
-      "new-arrival": false
+      "new-arrival": false,
+      "old-price": 70.0
     },
     {
       "id": "p7",
@@ -97,13 +103,14 @@
       "image": "p7.png",
       "price": 40.0,
       "description": "A sleek and stylish bookshelf for your living room.",
-      "color": ["maroon", "lime", "teal"],
+      "colors": ["maroon", "lime", "teal"],
       "brand": "Repurposed Electronics",
       "rating": 4,
       "discount": 10,
       "offer": false,
       "special-offer": true,
-      "new-arrival": false
+      "new-arrival": false,
+      "old-price": 55.0
     },
     {
       "id": "p8",
@@ -112,13 +119,14 @@
       "image": "p8.png",
       "price": 48.0,
       "description": "Bring a touch of nostalgia to your space with this retro armchair.",
-      "color": ["fuchsia"],
+      "colors": ["fuchsia"],
       "brand": "E-mag",
       "rating": 3,
       "discount": 20,
       "offer": false,
       "special-offer": false,
-      "new-arrival": true
+      "new-arrival": true,
+      "old-price": 60.0
     },
     {
       "id": "p9",
@@ -127,13 +135,14 @@
       "image": "p9.png",
       "price": 599.0,
       "description": "The latest smartphone with cutting-edge features.",
-      "color": ["maroon", "olive"],
+      "colors": ["maroon", "olive"],
       "brand": "Repurposed Electronics",
       "rating": 4,
       "discount": 30,
       "offer": false,
       "special-offer": false,
-      "new-arrival": false
+      "new-arrival": false,
+      "old-price": 699.0
     },
     {
       "id": "p10",
@@ -142,13 +151,14 @@
       "image": "p10.png",
       "price": 899.0,
       "description": "Experience stunning visuals with this Ultra HD TV.",
-      "color": ["aqua"],
+      "colors": ["aqua"],
       "brand": "E-mag",
       "rating": 5,
       "discount": 15,
       "offer": false,
       "special-offer": false,
-      "new-arrival": false
+      "new-arrival": false,
+      "old-price": 1099.0
     },
     {
       "id": "p11",
@@ -157,13 +167,14 @@
       "image": "p11.png",
       "price": 75.0,
       "description": "A space-saving sofa bed for your guest room.",
-      "color": ["teal", "lime"],
+      "colors": ["teal", "lime"],
       "brand": "Coaster Furniture",
       "rating": 4,
       "discount": 20,
       "offer": false,
       "special-offer": false,
-      "new-arrival": false
+      "new-arrival": false,
+      "old-price": 90.0
     },
     {
       "id": "p12",
@@ -172,13 +183,14 @@
       "image": "p12.png",
       "price": 50.0,
       "description": "Add elegance to your living room with this coffee table.",
-      "color": ["blue", "fuchsia"],
+      "colors": ["blue", "fuchsia"],
       "brand": "Unique Furniture Restor",
       "rating": 5,
       "discount": 25,
       "offer": false,
       "special-offer": false,
-      "new-arrival": false
+      "new-arrival": false,
+      "old-price": 70.0
     },
     {
       "id": "p13",
@@ -187,13 +199,14 @@
       "image": "p13.png",
       "price": 149.0,
       "description": "Immerse yourself in music with these noise-canceling headphones.",
-      "color": ["red"],
+      "colors": ["red"],
       "brand": "Repurposed Electronics",
       "rating": 4,
       "discount": 20,
       "offer": false,
       "special-offer": false,
-      "new-arrival": false
+      "new-arrival": false,
+      "old-price": 179.0
     },
     {
       "id": "p14",
@@ -202,13 +215,14 @@
       "image": "p14.png",
       "price": 70.0,
       "description": "Create a cozy dining space with this rustic dining set.",
-      "color": ["lime", "aqua"],
+      "colors": ["lime", "aqua"],
       "brand": "E-mag",
       "rating": 3,
       "discount": 15,
       "offer": false,
       "special-offer": false,
-      "new-arrival": false
+      "new-arrival": false,
+      "old-price": 85.0
     },
     {
       "id": "p15",
@@ -217,13 +231,14 @@
       "image": "p15.png",
       "price": 99.0,
       "description": "Control your home with this smart speaker.",
-      "color": ["fuchsia", "maroon", "lime"],
+      "colors": ["fuchsia", "maroon", "lime"],
       "brand": "Repurposed Electronics",
       "rating": 5,
       "discount": 10,
       "offer": false,
       "special-offer": false,
-      "new-arrival": false
+      "new-arrival": false,
+      "old-price": 119.0
     },
     {
       "id": "p16",
@@ -232,13 +247,14 @@
       "image": "p16.png",
       "price": 1299.0,
       "description": "Experience high-performance gaming with this laptop.",
-      "color": ["blue", "aqua"],
+      "colors": ["blue", "aqua"],
       "brand": "E-mag",
       "rating": 4,
       "discount": 25,
       "offer": false,
       "special-offer": false,
-      "new-arrival": false
+      "new-arrival": false,
+      "old-price": 1599.0
     },
     {
       "id": "p17",
@@ -247,13 +263,14 @@
       "image": "p17.png",
       "price": 55.0,
       "description": "Create a productive workspace with this modern desk.",
-      "color": ["aqua", "teal"],
+      "colors": ["aqua", "teal"],
       "brand": "Coaster Furniture",
       "rating": 4,
       "discount": 15,
       "offer": false,
       "special-offer": true,
-      "new-arrival": true
+      "new-arrival": true,
+      "old-price": 70.0
     },
     {
       "id": "p18",
@@ -262,13 +279,14 @@
       "image": "p18.png",
       "price": 58.0,
       "description": "Relax in style with this elegant lounge chair.",
-      "color": ["maroon", "blue"],
+      "colors": ["maroon", "blue"],
       "brand": "Unique Furniture Restor",
       "rating": 5,
       "discount": 10,
       "offer": false,
       "special-offer": false,
-      "new-arrival": false
+      "new-arrival": false,
+      "old-price": 70.0
     },
     {
       "id": "p19",
@@ -277,13 +295,14 @@
       "image": "p19.png",
       "price": 399.0,
       "description": "Capture memories with this high-quality digital camera.",
-      "color": ["red", "green"],
+      "colors": ["red", "green"],
       "brand": "Repurposed Electronics",
       "rating": 3,
       "discount": 30,
       "offer": false,
       "special-offer": false,
-      "new-arrival": false
+      "new-arrival": false,
+      "old-price": 499.0
     },
     {
       "id": "p20",
@@ -292,13 +311,14 @@
       "image": "p20.png",
       "price": 48.0,
       "description": "Add a touch of vintage charm with this armchair.",
-      "color": ["olive"],
+      "colors": ["olive"],
       "brand": "E-mag",
       "rating": 4,
       "discount": 20,
       "offer": false,
       "special-offer": false,
-      "new-arrival": false
+      "new-arrival": false,
+      "old-price": 60.0
     },
     {
       "id": "p21",
@@ -307,13 +327,14 @@
       "image": "p21.png",
       "price": 79.0,
       "description": "Enjoy wireless freedom with these earbuds.",
-      "color": ["maroon", "teal"],
+      "colors": ["maroon", "teal"],
       "brand": "Repurposed Electronics",
       "rating": 5,
       "discount": 15,
       "offer": false,
       "special-offer": false,
-      "new-arrival": false
+      "new-arrival": false,
+      "old-price": 99.0
     },
     {
       "id": "p22",
@@ -322,13 +343,14 @@
       "image": "p22.png",
       "price": 85.0,
       "description": "Create a cozy seating area with this sectional sofa.",
-      "color": ["aqua", "lime"],
+      "colors": ["aqua", "lime"],
       "brand": "Coaster Furniture",
       "rating": 3,
       "discount": 10,
       "offer": false,
       "special-offer": false,
-      "new-arrival": false
+      "new-arrival": false,
+      "old-price": 100.0
     },
     {
       "id": "p23",
@@ -337,13 +359,14 @@
       "image": "p23.png",
       "price": 30.0,
       "description": "Add a touch of retro style with this side table.",
-      "color": ["teal", "fuchsia"],
+      "colors": ["teal", "fuchsia"],
       "brand": "Unique Furniture Restor",
       "rating": 4,
       "discount": 25,
       "offer": false,
       "special-offer": true,
-      "new-arrival": true
+      "new-arrival": true,
+      "old-price": 40.0
     },
     {
       "id": "p24",
@@ -352,13 +375,14 @@
       "image": "p24.png",
       "price": 69.0,
       "description": "Stream your favorite content in stunning 4K quality.",
-      "color": ["lime", "aqua"],
+      "colors": ["lime", "aqua"],
       "brand": "E-mag",
       "rating": 5,
       "discount": 20,
       "offer": false,
       "special-offer": true,
-      "new-arrival": true
+      "new-arrival": true,
+      "old-price": 89.0
     },
     {
       "id": "p25",
@@ -367,13 +391,14 @@
       "image": "p25.png",
       "price": 249.0,
       "description": "Stay connected on the go with this versatile tablet.",
-      "color": ["red", "green"],
+      "colors": ["red", "green"],
       "brand": "Repurposed Electronics",
       "rating": 4,
       "discount": 15,
       "offer": false,
       "special-offer": false,
-      "new-arrival": false
+      "new-arrival": false,
+      "old-price": 299.0
     },
     {
       "id": "p26",
@@ -382,13 +407,14 @@
       "image": "p26.png",
       "price": 60.0,
       "description": "Organize your clothes in this classic wardrobe.",
-      "color": ["blue", "fuchsia"],
+      "colors": ["blue", "fuchsia"],
       "brand": "E-mag",
       "rating": 3,
       "discount": 10,
       "offer": false,
       "special-offer": false,
-      "new-arrival": false
+      "new-arrival": false,
+      "old-price": 70.0
     },
     {
       "id": "p27",
@@ -397,13 +423,14 @@
       "image": "p27.png",
       "price": 45.0,
       "description": "Get ready in style with this chic vanity table.",
-      "color": ["olive", "maroon"],
+      "colors": ["olive", "maroon"],
       "brand": "Coaster Furniture",
       "rating": 4,
       "discount": 25,
       "offer": false,
       "special-offer": false,
-      "new-arrival": false
+      "new-arrival": false,
+      "old-price": 60.0
     },
     {
       "id": "p28",
@@ -412,13 +439,14 @@
       "image": "p28.png",
       "price": 29.0,
       "description": "Charge your devices wirelessly with this convenient pad.",
-      "color": ["teal", "lime", "fuchsia"],
+      "colors": ["teal", "lime", "fuchsia"],
       "brand": "Repurposed Electronics",
       "rating": 5,
       "discount": 20,
       "offer": false,
       "special-offer": false,
-      "new-arrival": true
+      "new-arrival": true,
+      "old-price": 35.0
     },
     {
       "id": "p29",
@@ -427,13 +455,14 @@
       "image": "p29.png",
       "price": 55.0,
       "description": "Elevate your TV with this modern TV stand.",
-      "color": ["maroon", "aqua"],
+      "colors": ["maroon", "aqua"],
       "brand": "Unique Furniture Restor",
       "rating": 4,
       "discount": 15,
       "offer": false,
       "special-offer": true,
-      "new-arrival": true
+      "new-arrival": true,
+      "old-price": 65.0
     },
     {
       "id": "p30",
@@ -442,13 +471,14 @@
       "image": "p30.png",
       "price": 49.0,
       "description": "Enjoy wireless music with this portable Bluetooth speaker.",
-      "color": ["teal", "lime"],
+      "colors": ["teal", "lime"],
       "brand": "E-mag",
       "rating": 5,
       "discount": 10,
       "offer": false,
       "special-offer": true,
-      "new-arrival": false
+      "new-arrival": false,
+      "old-price": 60.0
     }
   ]
   ,
@@ -489,7 +519,7 @@
       "color": "pink"
     },
     {
-      "name": "color",
+      "name": "colors",
       "options": [
         "maroon",
         "red",

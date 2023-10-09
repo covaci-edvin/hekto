@@ -1,0 +1,32 @@
+@import "/src/assets/styles/abstracts/mixins";
+
+.img-container {
+    @include animatedBackground;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    margin-top: 1.6rem;
+    align-self: flex-start
+}
+
+
+.title {
+    @include animatedBackground;
+    width: 25rem;
+    height: 2.4rem;
+}
+
+.text {
+    @include animatedBackground;
+    width: 40rem;
+    height: 5rem;
+}
+
+.actions {
+    @include animatedBackground;
+    width: 20rem;
+    height: 5rem;
+}
