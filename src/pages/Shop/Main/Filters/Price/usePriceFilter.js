@@ -1,5 +1,7 @@
 import { useSearchParams } from "react-router-dom";
 
+import useScrollUp from "/src/hooks/useScrollUp";
+
 const usePriceFilter = () => {
   const [searchParams, setSearchParams] = useSearchParams();
 
@@ -7,6 +9,8 @@ const usePriceFilter = () => {
   const priceGte = searchParams.get("price_gte");
 
   const currValue = `${priceGte},${priceLte ? priceLte : "MAX"}`;
+
+  useScrollUp(300, [currValue]);
 
   function handleChange(e) {
     const {

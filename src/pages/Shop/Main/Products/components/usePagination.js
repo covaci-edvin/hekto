@@ -2,6 +2,7 @@ import { useCallback, useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
 
 import { limitKey, pageKey } from "/src/utils/constants";
+import useScrollUp from "/src/hooks/useScrollUp";
 
 import { useProducts } from "../../contexts/products";
 
@@ -42,6 +43,8 @@ const usePagination = () => {
 
     areThereNoParams && addParams();
   }, []);
+
+  useScrollUp(0, [currentPage]);
 
   const numberOfPages = Math.ceil(totalCount / limit);
   useEffect(() => {

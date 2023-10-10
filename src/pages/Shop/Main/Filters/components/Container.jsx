@@ -3,7 +3,7 @@ import Title from "./Title";
 
 function Container({ children, filterName }) {
   const formClasses =
-    filterName !== "color" ? styles.options : styles["color-options"];
+    filterName !== "colors" ? styles.options : styles["color-options"];
 
   return (
     <div className={styles.container}>

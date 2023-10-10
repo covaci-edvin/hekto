@@ -13,8 +13,10 @@ function Main() {
     <ProductsProvider>
       <section className={`${styles.section}`}>
         <Topbar viewMode={viewMode} setViewMode={setViewMode} />
-        <Filters />
-        <Products viewMode={viewMode} />
+        <div className={styles.container}>
+          <Filters />
+          <Products viewMode={viewMode} />
+        </div>
       </section>
     </ProductsProvider>
   );

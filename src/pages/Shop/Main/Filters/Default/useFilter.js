@@ -1,11 +1,15 @@
 import { useSearchParams } from "react-router-dom";
 
+import useScrollUp from "/src/hooks/useScrollUp";
+
 const useFilter = (filter) => {
   const [searchParams, setSearchParams] = useSearchParams();
 
   const name = `${filter.name}_like`;
 
   const urlParams = searchParams.get(name)?.split("|");
+
+  useScrollUp(1000, [urlParams]);
 
   function handleChange(e) {
     const {

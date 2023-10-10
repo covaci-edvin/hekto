@@ -1,0 +1,17 @@
+.container {
+    display: inline-flex;
+    background-color: var(--color-white);
+    box-shadow: var(--shadow-sm);
+    align-items: center;
+    justify-content: center;
+    height: 3.2rem;
+    width: 3.2rem;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.icon {
+    fill: var(--color-black);
+}

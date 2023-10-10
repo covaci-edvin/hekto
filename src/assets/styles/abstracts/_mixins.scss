@@ -1,0 +1,9 @@
+@import "/src/assets/styles/abstracts/animations";
+
+
+@mixin animatedBackground {
+    background: var(--color-grey-2);
+    background: linear-gradient(to right, var(--color-grey-1) 2%,  var(--color-grey-2)18%, var(--color-grey-1) 33%);
+    background-size: 1300px;
+    animation: placeholderAnimate 2s infinite;
+}
