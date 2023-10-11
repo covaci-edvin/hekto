@@ -2,9 +2,21 @@ import Icon from "/src/components/ui/Icon";
 
 import styles from "./ActionButton.module.scss";
 
-function ActionButton({ iconName, onClick }) {
+import { useState } from "react";
+
+function ActionButton({ iconName, onClick, itemKey }) {
+  const isInLocalStorage = localStorage.getItem(itemKey);
+  const [isActive, setIsActive] = useState(isInLocalStorage);
+
+  const btnClassNames = `${styles.container} ${isActive ? styles.active : ""}`;
   return (
-    <button className={styles.container} onClick={onClick}>
+    <button
+      className={btnClassNames}
+      onClick={() => {
+        onClick();
+        setIsActive((prev) => !prev);
+      }}
+    >
       <Icon iconName={iconName} className={styles.icon} />
     </button>
   );

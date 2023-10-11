@@ -21,7 +21,7 @@ function VerticalProduct({ product }) {
         <Price price={product.price} oldPrice={product["old-price"]} />
       </Link>
       <div className={styles["actions-container"]}>
-        <Actions type="vertical" />
+        <Actions type="vertical" productId={product.id} />
       </div>
     </div>
   );

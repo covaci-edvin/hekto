@@ -11,12 +11,23 @@
     transition: all .2s;
     
     &:hover {
-        background-color: var(--color-white);
         box-shadow: var(--shadow-sm);
+        background-color: var(--color-white);
+    }
+}
+
+.active {
+    border: 1px solid var(--color-primary);
+    background-color: var(--color-white);
+    box-shadow: var(--shadow-sm);
+
+    .icon {
+        fill: var(--color-primary);
     }
 }
 
 .icon {
+    transition: fill .2s;
     fill: var(--color-black);
 }
 
