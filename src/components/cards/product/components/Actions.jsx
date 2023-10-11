@@ -1,9 +1,13 @@
 import ActionButton from "./ActionButton";
 import styles from "./Actions.module.scss";
 
-function Actions() {
+function Actions({ type = "horizontal" }) {
+  const classNames = `${styles.container} ${
+    type === "vertical" ? styles.vertical : ""
+  }`;
+
   return (
-    <div className={styles.container}>
+    <div className={classNames}>
       <ActionButton iconName="cart" />
       <ActionButton iconName="heart" />
       <ActionButton iconName="zoom-in" />
