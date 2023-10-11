@@ -1,5 +1,6 @@
 import styles from "./GridView.module.scss";
-import VerticalProduct from "../../../../../components/cards/product/VerticalProduct";
+
+import VerticalProduct from "/src/components/cards/product/VerticalProduct";
 
 function GridView({ products }) {
   return (

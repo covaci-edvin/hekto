@@ -13,7 +13,7 @@ function Topbar({ viewMode, setViewMode }) {
       </div>
       <div className={styles.controls}>
         <ResetFiltersControl />
-        <PerPageControl viewMode={viewMode} />
+        <PerPageControl />
         <SortByControl />
         <ViewControl viewMode={viewMode} setViewMode={setViewMode} />
       </div>
