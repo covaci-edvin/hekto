@@ -35,7 +35,7 @@ function HorizontalProduct({ product }) {
           <Description>{product.description}</Description>
         </Link>
         <div className={styles.actions}>
-          <Actions />
+          <Actions productId={product.id} />
         </div>
       </div>
     </div>

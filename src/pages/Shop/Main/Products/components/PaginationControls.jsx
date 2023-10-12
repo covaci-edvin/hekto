@@ -28,7 +28,7 @@ function PaginationControls() {
 
   return (
     <div className={styles.container}>
-      {pages.map((_, index) => renderPage(index + 1))}
+      {pages?.map((_, index) => renderPage(index + 1))}
     </div>
   );
 }
