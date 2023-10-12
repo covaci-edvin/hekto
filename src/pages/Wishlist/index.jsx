@@ -1,14 +1,7 @@
-import useFetchProducts from "/src/hooks/useFetchProducts";
+import useFetchLocalStorageProducts from "/src/hooks/useFetchLocalStorageProducts";
 
 function Wishlist() {
-  const localStorageItems = { ...localStorage };
-  const productIds = [];
-
-  for (const [key, value] of Object.entries(localStorageItems)) {
-    if (key.startsWith("wishlist")) productIds.push(value);
-  }
-
-  const { data, isPending } = useFetchProducts(productIds);
+  const { data, isPending } = useFetchLocalStorageProducts("wishlist");
 
   return (
     <div>

@@ -1,11 +1,13 @@
 import useFetch from "/src/hooks/useFetch";
 
+const productsBaseUrl = "http://localhost:3000/products?";
+
 export default function useFetchProducts(productIds) {
   let url;
+
   if (productIds.length > 0) {
-    url = `http://localhost:3000/products?${productIds
-      .map((id) => `id=${id}`)
-      .join("&")}`;
+    const productsParams = productIds.map((id) => `id=${id}`).join("&");
+    url = `${productsBaseUrl}${productsParams}`;
   } else {
     url = "";
   }

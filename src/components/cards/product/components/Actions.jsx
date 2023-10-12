@@ -1,40 +1,31 @@
 import ActionButton from "./ActionButton";
 import styles from "./Actions.module.scss";
+import useProductLocalStorageAction from "../hooks/useProductLocalStorageAction";
 
 function Actions({ type = "horizontal", productId }) {
-  const cartItemKey = `cart-${productId}`;
-  const wishlistItemKey = `wishlist-${productId}`;
+  const { handler: cartHandler, isActive: cartIsActive } =
+    useProductLocalStorageAction("cart", productId);
 
-  function onAddToCart() {
-    if (!localStorage.getItem(cartItemKey)) {
-      localStorage.setItem(cartItemKey, productId);
-    } else {
-      localStorage.removeItem(cartItemKey);
-    }
-  }
-
-  function onAddToWishlist() {
-    if (!localStorage.getItem(wishlistItemKey)) {
-      localStorage.setItem(wishlistItemKey, productId);
-    } else {
-      localStorage.removeItem(wishlistItemKey);
-    }
-  }
+  const { handler: wishlistHandler, isActive: wishlistIsActive } =
+    useProductLocalStorageAction("wishlist", productId);
 
   const classNames = `${styles.container} ${
     type === "vertical" ? styles.vertical : ""
   }`;
+
   return (
     <div className={classNames}>
       <ActionButton
         iconName="cart"
-        onClick={onAddToCart}
-        itemKey={cartItemKey}
+        onClick={cartHandler}
+        itemKey={"cart"}
+        isActive={cartIsActive}
       />
       <ActionButton
         iconName="heart"
-        onClick={onAddToWishlist}
-        itemKey={wishlistItemKey}
+        onClick={wishlistHandler}
+        itemKey={"wishlist"}
+        isActive={wishlistIsActive}
       />
       <ActionButton iconName="zoom-in" />
     </div>
