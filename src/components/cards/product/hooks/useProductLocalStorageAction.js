@@ -8,21 +8,16 @@ export default function useProductLocalStorageAction(key, productId) {
     if (items?.includes(productId)) setIsActive(true);
   }, []);
 
-  function handler() {
+  function updateLocalStorage() {
     const items = JSON.parse(localStorage.getItem(key)) || [];
 
-    let newItems;
-
-    if (items.includes(productId)) {
-      newItems = items.filter((id) => id !== productId);
-      setIsActive(false);
-    } else {
-      newItems = [...items, productId];
-      setIsActive(true);
-    }
+    const newItems = isActive
+      ? items.filter((id) => id !== productId)
+      : [...items, productId];
+    setIsActive((prev) => !prev);
 
     localStorage.setItem(key, JSON.stringify(newItems));
   }
 
-  return { handler, isActive };
+  return { updateLocalStorage, isActive };
 }

@@ -3,10 +3,10 @@ import styles from "./Actions.module.scss";
 import useProductLocalStorageAction from "../hooks/useProductLocalStorageAction";
 
 function Actions({ type = "horizontal", productId }) {
-  const { handler: cartHandler, isActive: cartIsActive } =
+  const { updateLocalStorage: cartHandler, isActive: cartIsActive } =
     useProductLocalStorageAction("cart", productId);
 
-  const { handler: wishlistHandler, isActive: wishlistIsActive } =
+  const { updateLocalStorage: wishlistHandler, isActive: wishlistIsActive } =
     useProductLocalStorageAction("wishlist", productId);
 
   const classNames = `${styles.container} ${
