@@ -1,4 +1,9 @@
 .container {
     display: flex;
-    gap: 1rem;
+    gap: .8rem;
+}
+
+.vertical {
+    flex-direction: column;
+    gap: 0.2rem;
 }
