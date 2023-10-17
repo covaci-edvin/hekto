@@ -3,6 +3,7 @@ import Button from "/src/components/ui/Button";
 import styles from "./Slide.module.scss";
 
 import offerBgImg from "/src/assets/svgs/hero-offer-discount-bg.svg";
+import { imagesBaseUrl } from "/src/utils/constants";
 
 import { Link } from "react-router-dom";
 
@@ -25,7 +26,7 @@ function Slide({ offer }) {
         <div className={styles["img-container"]}>
           <img
             className={styles.img}
-            src={`http://localhost:8080/${offer.image}`}
+            src={`${imagesBaseUrl}${offer.image}`}
             loading="lazy"
           />
           <div className={styles["discount-container"]}>
