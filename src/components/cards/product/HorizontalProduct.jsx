@@ -8,13 +8,15 @@ import Price from "./components/Price";
 import Title from "./components/Title";
 import Rating from "../../ui/Rating";
 
+import { imagesBaseUrl } from "/src/utils/constants";
+
 function HorizontalProduct({ product }) {
   return (
     <div className={styles.container}>
       <Link to={product.id} className={styles.link}>
         <div className={styles["img-container"]}>
           <img
-            src={`http://localhost:8080/${product.image}`}
+            src={`${imagesBaseUrl}${product.image}`}
             className={styles.img}
           />
         </div>

@@ -1,6 +1,5 @@
+import { productsBaseUrl } from "/src/utils/constants";
 import useFetch from "/src/hooks/useFetch";
-
-const productsBaseUrl = "http://localhost:3000/products?";
 
 export default function useFetchProducts(productIds) {
   let url;
