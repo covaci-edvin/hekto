@@ -4,7 +4,7 @@ import styles from "./index.module.scss";
 
 function ProductDetails({ product }) {
   return (
-    <section className={`u-section-content`}>
+    <section className="u-section-content">
       <div className={styles.container}>
         <Images image={product.image} images={product.images} />
         <Details product={product} />

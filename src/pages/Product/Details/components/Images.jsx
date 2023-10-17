@@ -10,7 +10,7 @@ function Images({ image, images }) {
   const [activeImage, setActiveImage] = useState();
 
   useEffect(() => {
-    if (images && images[0]) setActiveImage(`${imagesBaseUrl}${images[0]}`);
+    if (images?.[0]) setActiveImage(`${imagesBaseUrl}${images[0]}`);
   }, [images]);
 
   function renderImages(images) {

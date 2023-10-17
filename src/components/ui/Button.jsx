@@ -1,9 +1,9 @@
 import styles from "./Button.module.scss";
 
 function Button({
+  children,
   size = "md",
   color = "default",
-  children,
   onClick = () => {},
   className = "",
 }) {
